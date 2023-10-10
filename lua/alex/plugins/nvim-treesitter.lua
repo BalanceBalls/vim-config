@@ -12,7 +12,6 @@ require('nvim-treesitter.configs').setup{
     "proto",
     "python",
     "rego",
-    "ruby",
     "sql",
     "svelte",
     "yaml",

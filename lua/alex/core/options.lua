@@ -3,7 +3,7 @@ local opt = vim.opt
 vim.g.mapleader = " "
 
 -- Use powershell as default terminal
-opt.shell = "powershell.exe"
+opt.shell = "pwsh.exe"
 
 -- line numbers
 opt.relativenumber = true
