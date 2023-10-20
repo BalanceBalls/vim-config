@@ -18,7 +18,11 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
-keymap.set('t', '<C-q>q', [[<C-\><C-n>]])
+keymap.set("t", "<C-q>q", [[<C-\><C-n>]]) -- exit terminal mode
+keymap.set("n", "<leader>cd", "<PageDown><C-u>M", { noremap = true, silent = true })
+
+keymap.set("n", "j", "jzz", { noremap = true, silent = true })
+keymap.set("n", "k", "kzz", { noremap = true, silent = true })
 
 keymap.set('n', '<leader>fc', function()
 	require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {

@@ -7,7 +7,7 @@ local configs = require "lspconfig.configs"
 local util = require "lspconfig.util"
 local async = require "lspconfig.async"
 -- -> the following line fixes it - mod_cache initially set to value that you've got from `go env GOMODCACHE` command
-local mod_cache = ""
+local mod_cache = "C:\\Users\\alex2\\go\\pkg\\mod"
 
 -- setting the config for gopls, the contents below is also copy-paste from
 -- https://github.com/neovim/nvim-lspconfig/blob/ede4114e1fd41acb121c70a27e1b026ac68c42d6/lua/lspconfig/server_configurations/gopls.lua
@@ -70,6 +70,8 @@ lsp.set_preferences({
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
+  vim.keymap.set("n", "<C-Space>", function() vim.lsp.buf.completion() end, opts)
+  vim.keymap.set("n", "<leader>ss", function() vim.lsp.buf.signature_help() end, opts)
   vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
   vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
   vim.keymap.set("n", "<leader>cf", function() vim.lsp.buf.format() end, opts)
