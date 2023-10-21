@@ -16,8 +16,8 @@ opt.number = true
 
 -- tabs & ident
 opt.tabstop = 2
-opt.shiftwidth = 0
-opt.expandtab = true
+opt.shiftwidth = 2
+opt.expandtab = false
 opt.autoindent = true
 
 -- line wrapping
