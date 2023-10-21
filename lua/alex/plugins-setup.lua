@@ -27,7 +27,7 @@ end
 
 return packer.startup(function(use)
   use("wbthomason/packer.nvim")
-  
+
   -- Install theme
   use("navarasu/onedark.nvim")
 
@@ -40,7 +40,7 @@ return packer.startup(function(use)
 
   -- File explorer
   use("nvim-tree/nvim-tree.lua")
-  
+
   -- Syntax highlighting
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
@@ -51,7 +51,13 @@ return packer.startup(function(use)
   -- Toggle terminal
   use ({"akinsho/toggleterm.nvim", tag = '*'})
 
-  -- Install LSP
+  -- Comments
+  use {
+      "numToStr/Comment.nvim",
+      config = function()
+          require('Comment').setup()
+      end
+  }
 
   -- Git
   use("lewis6991/gitsigns.nvim")
