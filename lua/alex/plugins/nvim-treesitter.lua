@@ -13,7 +13,6 @@ require('nvim-treesitter.configs').setup{
     "python",
     "rego",
     "sql",
-    "svelte",
     "yaml",
     "c_sharp"
   },

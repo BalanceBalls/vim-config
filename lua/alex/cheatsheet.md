@@ -1,6 +1,5 @@
 ### Base
 
-
 # Modes
  - 'v' >> enter visual mode
  - 'V' >> enter lines only visual mode
@@ -132,15 +131,23 @@
  - '<leader>' + 'g' + 'c' >> show commits for git repo
  - '<leader>' + 'g' + 'b' >> show git branches
  - '<leader>' + 'g' + 's' >> show git status
- - '<leader>' + 'h' + 's' >> stage hunk (works in normal and visual modes)
- - '<leader>' + 'h' + 'r' >> reset hunk (works in normal and visual modes)
- - '<leader>' + 'h' + 'S' >> stage buffer (file)
- - '<leader>' + 'h' + 'u' >> undo stage hunk
- - '<leader>' + 'h' + 'R' >> reset buffer
- - '<leader>' + 'h' + 'p' >> preview hunk
- - '<leader>' + 'h' + 'b' >> git blame for a hunk the line belongs to
- - '<leader>' + 't' + 'b' >> toggle current line git blame
+ - '<leader>' + 'g' + 'h' + 's' >> stage hunk (works in normal and visual modes)
+ - '<leader>' + 'g' + 'h' + 'r' >> reset hunk (works in normal and visual modes)
+ - '<leader>' + 'g' + 'h' + 'S' >> stage buffer (file)
+ - '<leader>' + 'g' + 'h' + 'u' >> undo stage hunk
+ - '<leader>' + 'g' + 'h' + 'R' >> reset buffer
+ - '<leader>' + 'g' + 'h' + 'p' >> preview hunk
+ - '<leader>' + 'g' + 'h' + 'b' >> git blame for a hunk the line belongs to
+ - '<leader>' + 'g' + 't' + 'b' >> toggle current line git blame
  - '<leader>' + 'g' + 'd' >> toggle merge tool
  - '<leader>' + 'h' + 'D' >> diff
- - '<leader>' + 't' + 'd' >> show deleted lines
+ - '<leader>' + 'g' + 't' + 'd' >> show deleted lines
  - '[' | ']' + 'c' >> next/prev hunk
+
+### Harpoon
+ - '<leader>' + 'h' + 'a' >> add file to harpoon
+ - '<leader>' + 'h' + 'd' >> display marked files
+ - '<leader>' + 'h' + 'n' >> go to next file
+ - '<leader>' + 'h' + 'p' >> go to previous file
+ - '<leader>' + 'h' + 'u' >> remove/unmark file from harpoon
+ - '<leader>' + 'h' + '1 | 2 | 3' >> quick access to the first 3 files
