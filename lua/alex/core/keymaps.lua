@@ -67,8 +67,11 @@ keymap.set("n", "<leader>2", function() dap.step_into() end)
 keymap.set("n", "<leader>3", function() dap.step_out() end)
 keymap.set("n", "<leader>dow", function() sidebar.open() end) -- debugger open window
 keymap.set("n", "<leader>dcw", function() sidebar.close() end) -- debugger close window
+keymap.set({ "n", "v"}, "<leader>dh", function() widgets.hover() end)
+keymap.set({"n", "v"}, "<leader>dp", function() widgets.preview() end)
+keymap.set("n", "<leader>df", function() widgets.centered_float(widgets.frames) end)
+keymap.set("n", "<leader>ds", function() widgets.centered_float(widgets.scopes) end)
 
 keymap.set("n", "<leader>wl", ":vertical resize +30<CR>")
 keymap.set("n", "<leader>wh", ":vertical resize -30<CR>")
 keymap.set("n", "<leader>we", ":wincmd =<CR>")
-
