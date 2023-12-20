@@ -3,10 +3,6 @@ if not status then
   return
 end
 
--- get lualine nightfly theme
-local lualine_nightfly = require("lualine.themes.onedark")
-local lualine_ayu_light = require("lualine.themes.ayu_light")
-
 -- configure lualine with modified theme
 lualine.setup({
   options = {
@@ -19,9 +15,9 @@ lualine.setup({
           local status = require("ollama").status()
 
           if status == "IDLE" then
-            return "󱙺" -- nf-md-robot-outline
+            return "Chillin" -- nf-md-robot-outline
           elseif status == "WORKING" then
-            return "󰚩" -- nf-md-robot
+            return "Inference..." -- nf-md-robot
           end
         end,
         cond = function()

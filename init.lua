@@ -1,6 +1,5 @@
 require("alex.plugins-setup")
 require("alex.core.options")
-require("alex.core.colorscheme")
 require("alex.core.keymaps")
 require("alex.plugins.gopher")
 require("alex.plugins.nvim-treesitter")
