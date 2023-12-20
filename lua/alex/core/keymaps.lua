@@ -57,3 +57,18 @@ keymap.set("v", "<leader>ll", ":Ollama<CR>") -- List prompts
 keymap.set("n", "<leader>clt", ":colorscheme catppuccin-latte<CR>") -- set light theme
 keymap.set("n", "<leader>cdt", ":colorscheme catppuccin-mocha<CR>") -- set dark theme
 
+local dap = require("dap")
+local widgets = require("dap.ui.widgets");
+local sidebar = widgets.sidebar(widgets.scopes);
+keymap.set("n", "<leader>sb", function() dap.toggle_breakpoint() end)
+keymap.set("n", "<leader>5", function() dap.continue() end)
+keymap.set("n", "<leader>1", function() dap.step_over() end)
+keymap.set("n", "<leader>2", function() dap.step_into() end)
+keymap.set("n", "<leader>3", function() dap.step_out() end)
+keymap.set("n", "<leader>dow", function() sidebar.open() end) -- debugger open window
+keymap.set("n", "<leader>dcw", function() sidebar.close() end) -- debugger close window
+
+keymap.set("n", "<leader>wl", ":vertical resize +30<CR>")
+keymap.set("n", "<leader>wh", ":vertical resize -30<CR>")
+keymap.set("n", "<leader>we", ":wincmd =<CR>")
+
