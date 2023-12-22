@@ -24,12 +24,7 @@ keymap.set("n", "<leader>cd", "<PageDown><C-u>M", { noremap = true, silent = tru
 keymap.set("n", "j", "jzz", { noremap = true, silent = true })
 keymap.set("n", "k", "kzz", { noremap = true, silent = true })
 
-keymap.set('n', '<leader>fc', function()
-	require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-		winblend = 10,
-  		previewer = false,
-    })
-end, { desc = '[/] Fuzzily search in current buffer' })
+keymap.set('n', '<leader>fc', function() require('telescope.builtin').current_buffer_fuzzy_find() end, { desc = '[/] Fuzzily search in current buffer' })
 
 keymap.set("n", "<leader>goj", ":GoTagAdd json<CR>")
 keymap.set("n", "<leader>goe", ":GoIfErr<CR>")
@@ -75,3 +70,5 @@ keymap.set("n", "<leader>ds", function() widgets.centered_float(widgets.scopes) 
 keymap.set("n", "<leader>wl", ":vertical resize +30<CR>")
 keymap.set("n", "<leader>wh", ":vertical resize -30<CR>")
 keymap.set("n", "<leader>we", ":wincmd =<CR>")
+
+keymap.set("n", "<leader>ww", ":set wrap<CR>")

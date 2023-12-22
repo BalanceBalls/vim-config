@@ -6,7 +6,8 @@ end
 -- configure lualine with modified theme
 lualine.setup({
   options = {
-    theme = "catppuccin",
+    --theme = "catppuccin",
+		theme = "gruvbox-material"
   },
   sections = {
     lualine_x = {
