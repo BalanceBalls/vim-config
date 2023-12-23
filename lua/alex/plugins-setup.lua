@@ -69,6 +69,19 @@ return packer.startup(function(use)
   -- GoLang tools
   use("olexsmir/gopher.nvim")
 
+	-- Visible identation
+	use {
+		"lukas-reineke/indent-blankline.nvim", 
+		config = function()
+			require("ibl").setup{
+				indent = { highlight = highlight },
+				whitespace = {
+					highlight = highlight
+    		},
+			}
+		end
+	}
+
   -- Autoclose
   use("windwp/nvim-autopairs")
 
