@@ -49,9 +49,10 @@ keymap.set("n", "<leader>lsm", ":OllamaModel<CR>") -- Change model
 keymap.set("n", "<leader>ll", ":Ollama<CR>") -- List prompts
 keymap.set("v", "<leader>ll", ":Ollama<CR>") -- List prompts
 
-keymap.set("n", "<leader>clt", ":colorscheme catppuccin-latte<CR>") -- set light theme
-keymap.set("n", "<leader>cdt", ":colorscheme catppuccin-mocha<CR>") -- set dark theme
-keymap.set("n", "<leader>cgv", ":colorscheme gruvbox-material<CR>") -- set dark theme
+keymap.set("n", "<leader>clt", ":colorscheme catppuccin-latte<CR>")
+keymap.set("n", "<leader>cdt", ":colorscheme catppuccin-mocha<CR>")
+keymap.set("n", "<leader>cgv", ":colorscheme gruvbox-material<CR>")
+keymap.set("n", "<leader>cod", ":colorscheme onedark<CR>")
 
 local dap = require("dap")
 local widgets = require("dap.ui.widgets");
