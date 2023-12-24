@@ -1,7 +1,7 @@
 require("alex.plugins-setup")
 require("alex.core.options")
 require("alex.core.keymaps")
-require("alex.plugins.gopher")
+require("alex.plugins.go")
 require("alex.plugins.nvim-treesitter")
 require("alex.plugins.telescope")
 require("alex.plugins.lualine")
