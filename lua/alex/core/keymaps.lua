@@ -75,6 +75,5 @@ keymap.set("n", "<leader>we", ":wincmd =<CR>")
 
 keymap.set("n", "<leader>ww", ":set wrap<CR>")
 
-
 -- Go bindings
 keymap.set("n", "<leader>ir", ":GoIfErr<CR>")

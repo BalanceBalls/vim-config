@@ -65,10 +65,10 @@ return packer.startup(function(use)
   use {'ThePrimeagen/harpoon'}
 
   -- Git
-  use("ray-x/go.nvim")
+	use ("lewis6991/gitsigns.nvim")
   
   -- GoLang tools
-  use("olexsmir/gopher.nvim")
+  use("ray-x/go.nvim")
 
 	-- Visible identation
 	use {
