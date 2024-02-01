@@ -1,6 +1,12 @@
 ## Base
 
-
+# View
+ - '<leader>' + 'w' + 'w' >> enable word wrap
+ - '<leader>' + 'w' + 'e' >> set equal width for splits
+ - '<leader>' + 'w' + 'l' >> make split window larger
+ - '<leader>' + 'w' + 'h' >> make split window smaller
+ - '<leader>' + 'h' + 'h' >> hide highlights
+ 
 # Modes
  - 'v' >> enter visual mode
  - 'V' >> enter lines only visual mode
@@ -153,3 +159,15 @@
  - '<leader>' + 'h' + 'u' >> remove/unmark file from harpoon
  - '<leader>' + 'h' + '1 | 2 | 3' >> quick access to the first 3 files
  
+### DAP
+ - '<leader>' + 's' + 'b' >> set breakpoint
+ - '<leader>' + '5' >> F5 / continue || open debugger menu
+ - '<leader>' + '1' >> F10 / step over
+ - '<leader>' + '2' >> F11 / step into
+ - '<leader>' + '3' >> step out
+ - '<leader>' + 'd' + 'o' + 'w' >> open debugger window
+ - '<leader>' + 'd' + 'c' + 'w' >> close debugger window
+ - '<leader>' + 'd' + 'h' >> debugger hover
+ - '<leader>' + 'd' + 'p' >> debugger preview
+ - '<leader>' + 'd' + 'f' >> debugger frames
+ - '<leader>' + 'd' + 's' >> debugger scopes
