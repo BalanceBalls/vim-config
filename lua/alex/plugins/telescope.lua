@@ -20,3 +20,4 @@ map("n", "<leader>gs", "<cmd>Telescope git_status<cr>", opts) -- list current ch
 map("n", "<leader>gt", "<cmd>Telescope git_stash<cr>", opts)
 
 vim.keymap.set('n', '<leader>fc', function() require('telescope.builtin').current_buffer_fuzzy_find() end, { desc = '[/] Fuzzily search in current buffer' })
+vim.keymap.set('n', '<leader>fr', function() require('telescope.builtin').resume() end, { desc = 'Previous search'})

@@ -26,6 +26,9 @@ keymap.set("n", "<leader>we", ":wincmd =<CR>")
 
 keymap.set("n", "<leader>ww", ":set wrap<CR>")
 
+keymap.set({ "n", "i" }, "<leader>ls", ":LLMSuggestion<CR>")
+keymap.set("n", "<leader>lsa", ":LLMToggleAutoSuggest<CR>")
+
 -- Harpoon
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
@@ -72,3 +75,9 @@ keymap.set("n", "<leader>ds", function() widgets.centered_float(widgets.scopes) 
 
 -- Go bindings
 keymap.set("n", "<leader>ir", ":GoIfErr<CR>")
+
+-- Diganostics
+keymap.set("n", "<leader>dx", ":Trouble<CR>")
+keymap.set("n", "<leader>dxx", ":Trouble diagnostics toggle<CR>")
+keymap.set("n", "<leader>dxs", ":Trouble symbols toggle<CR>")
+keymap.set("n", "<leader>dxl", ":Trouble lsp toggle<CR>")

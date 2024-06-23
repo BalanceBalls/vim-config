@@ -117,6 +117,8 @@ return packer.startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("leoluz/nvim-dap-go")
 
+	use("folke/trouble.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end
