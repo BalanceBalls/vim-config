@@ -112,6 +112,7 @@ return packer.startup(function(use)
 
 	-- LLM
 	use("nomnivore/ollama.nvim")
+	use("David-Kunz/gen.nvim")
 
 	-- Debugger
 	use("mfussenegger/nvim-dap")
