@@ -62,10 +62,10 @@ local dap = require("dap")
 local widgets = require("dap.ui.widgets");
 local sidebar = widgets.sidebar(widgets.scopes);
 keymap.set("n", "<leader>sb", function() dap.toggle_breakpoint() end)
-keymap.set("n", "<leader>5", function() dap.continue() end)
-keymap.set("n", "<leader>1", function() dap.step_over() end)
-keymap.set("n", "<leader>2", function() dap.step_into() end)
-keymap.set("n", "<leader>3", function() dap.step_out() end)
+keymap.set("n", "<F5>", function() dap.continue() end)
+keymap.set("n", "<F10>", function() dap.step_over() end)
+keymap.set("n", "<F11>", function() dap.step_into() end)
+keymap.set("n", "<F12>", function() dap.step_out() end)
 keymap.set("n", "<leader>dow", function() sidebar.open() end) -- debugger open window
 keymap.set("n", "<leader>dcw", function() sidebar.close() end) -- debugger close window
 keymap.set({ "n", "v"}, "<leader>dh", function() widgets.hover() end)
