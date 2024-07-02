@@ -43,13 +43,10 @@ keymap.set("n", "<leader>h2", function() ui.nav_file(2) end)
 keymap.set("n", "<leader>h3", function() ui.nav_file(3) end)
 
 -- LLM plugin
-keymap.set("v", "<leader>lec", ":Ollama<CR>2<CR>") -- Explain code
-keymap.set("v", "<leader>lem", ":Ollama<CR>4<CR>") -- Modify code
-keymap.set("n", "<leader>lsu", ":OllamaServe<CR>") -- Ollama start 
-keymap.set("n", "<leader>lsd", ":OllamaServeStop<CR>") -- Ollama stop 
-keymap.set("n", "<leader>lsm", ":OllamaModel<CR>") -- Change model
-keymap.set("n", "<leader>ll", ":Ollama<CR>") -- List prompts
-keymap.set("v", "<leader>ll", ":Ollama<CR>") -- List prompts
+keymap.set("v", "<leader>gs", ":'<,'>Gen<CR>")
+keymap.set("n", "<leader>g", ":Gen<CR>")
+keymap.set("n", "<leader>gg", ":Gen Chat<CR>")
+keymap.set("n", "<leader>gm", ":lua require('gen').select_model()<CR>")
 
 -- Theme switch
 keymap.set("n", "<leader>clt", ":colorscheme catppuccin-latte<CR>")
