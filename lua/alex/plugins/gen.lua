@@ -1,5 +1,5 @@
 require('gen').setup({
-	model = "gemma2:9b-instruct-q8_0", -- The default model to use.
+	model = "codegeex4:9b-all-q6_K", -- The default model to use.
   host = "localhost", -- The host running the Ollama service.
   port = "11434", -- The port on which the Ollama service is listening.
   quit_map = "q", -- set keymap for close the response window

@@ -78,3 +78,8 @@ keymap.set("n", "<leader>dx", ":Trouble<CR>")
 keymap.set("n", "<leader>dxx", ":Trouble diagnostics toggle<CR>")
 keymap.set("n", "<leader>dxs", ":Trouble symbols toggle<CR>")
 keymap.set("n", "<leader>dxl", ":Trouble lsp toggle<CR>")
+
+-- Tests
+keymap.set("n", "<leader>rt", ":lua require('neotest').run.run()<CR>") -- run closest test
+keymap.set("n", "<leader>rtf", ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>") -- run all tests for file
+keymap.set("n", "<leader>rto", ":lua require('neotest').summary.open()<CR>") -- open tests panel

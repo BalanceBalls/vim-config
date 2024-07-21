@@ -53,6 +53,16 @@ return packer.startup(function(use)
   -- Toggle terminal
   use ({"akinsho/toggleterm.nvim", tag = '*'})
 
+	use({
+		"nvim-neotest/neotest",
+		requires = {
+			{
+				"Issafalcon/neotest-dotnet",
+				"nvim-neotest/nvim-nio"
+			},
+		}
+	})
+
   -- Comments
   use {
       "numToStr/Comment.nvim",
