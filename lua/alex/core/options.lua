@@ -43,3 +43,6 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
+vim.diagnostic.config({
+    virtual_lines = true
+})
