@@ -3,7 +3,7 @@ return {
         "David-Kunz/gen.nvim",
         config = function()
             require('gen').setup({
-                model = "qwen2.5-coder:7b-base-q6_K", -- The default model to use.
+                model = "qwen3:4b-thinking-2507-q4_K_M", -- The default model to use.
                 host = "localhost",                   -- The host running the Ollama service.
                 port = "11434",                       -- The port on which the Ollama service is listening.
                 quit_map = "q",                       -- set keymap for close the response window

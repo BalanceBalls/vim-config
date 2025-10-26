@@ -49,16 +49,13 @@ return {
         options = {
             globalstatus = false, -- true == single statusline
             icons_enabled = true,
-            theme = "rose-pine",
+            theme = "ayu",
             component_separators = "⋮",
-            --section_separators = { left = "", right = "" },
             section_separators = { left = "", right = "" },
         },
         sections = {
             lualine_a = {
                 {
-                    -- shorten mode names
-                    -- https://github.com/nvim-lualine/lualine.nvim/issues/614#issuecomment-1072275099
                     "mode",
                     fmt = function(res)
                         return res:sub(1, 1)
@@ -66,16 +63,9 @@ return {
                 },
             },
             lualine_c = {
-                --{ "searchcount" },
                 {
                     "buffers",
                     show_filename_only = true,
-                    --fmt = function(str)
-                    --	return str:sub(1, 1)
-                    --end,
-                    --fmt = function()
-                    --	return string.gsub(vim.api.nvim_buf_get_name(0), vim.loop.cwd(), "")
-                    --end,
                 },
             },
             lualine_x = {
