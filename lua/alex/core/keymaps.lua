@@ -3,15 +3,15 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- Misc
-keymap.set("n", "<leader>hh", ":noh<CR>") -- hide higlights
-keymap.set("n", "<leader>tj", ":sp | ter<CR>") -- space + t + j : split horizontally and open termianl in a new window 
-keymap.set("n", "<leader>tl", ":vs | ter<CR>") -- space + t + l : split horizontally and opern terminal in a new window
-keymap.set("n", "<leader>tt", ":tabnew | ter<CR>") -- spsace + t + t : open a terminal in a new tab
-keymap.set("n", "<leader>nt", ":tabnew<CR>") -- space + n + t : open a new tab
+keymap.set("n", "<leader>hh", ":noh<CR>")                                          -- hide higlights
+keymap.set("n", "<leader>tj", ":sp | ter<CR>")                                     -- space + t + j : split horizontally and open termianl in a new window
+keymap.set("n", "<leader>tl", ":vs | ter<CR>")                                     -- space + t + l : split horizontally and opern terminal in a new window
+keymap.set("n", "<leader>tt", ":tabnew | ter<CR>")                                 -- spsace + t + t : open a terminal in a new tab
+keymap.set("n", "<leader>nt", ":tabnew<CR>")                                       -- space + n + t : open a new tab
 
 keymap.set("n", "<leader>th", ":tabnew ~/.config/nvim/lua/alex/cheatsheet.md<CR>") -- open cheatsheet
 
-keymap.set("n", "<leader>ee", ":Lex<CR>:vertical resize 50<CR>") -- open/close file explorer
+keymap.set("n", "<leader>ee", ":Lex<CR>:vertical resize 50<CR>")                   -- open/close file explorer
 keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>:vertical resize 50<CR>")
 
 keymap.set("t", "<C-q>q", [[<C-\><C-n>]]) -- exit terminal mode
@@ -66,6 +66,6 @@ keymap.set("n", "<leader>dxs", ":Trouble symbols toggle<CR>")
 keymap.set("n", "<leader>dxl", ":Trouble lsp toggle<CR>")
 
 -- Tests
-keymap.set("n", "<leader>rt", ":lua require('neotest').run.run()<CR>") -- run closest test
+keymap.set("n", "<leader>rt", ":lua require('neotest').run.run()<CR>")                    -- run closest test
 keymap.set("n", "<leader>rtf", ":lua require('neotest').run.run(vim.fn.expand('%'))<CR>") -- run all tests for file
-keymap.set("n", "<leader>rto", ":lua require('neotest').summary.open()<CR>") -- open tests panel
+keymap.set("n", "<leader>rto", ":lua require('neotest').summary.open()<CR>")              -- open tests panel

@@ -1,10 +1,10 @@
 local opt = vim.opt
 
 vim.filetype.add({
- extension = {
-  templ = "templ",
-	log = "log"
- },
+    extension = {
+        templ = "templ",
+        log = "log"
+    },
 })
 
 vim.g.mapleader = " "
