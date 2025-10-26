@@ -32,6 +32,26 @@ return packer.startup(function(use)
 	use { "catppuccin/nvim", as = "catppuccin" }
 	use { "sainnhe/gruvbox-material", as = "gruvbox" }
 	use { "navarasu/onedark.nvim" }
+	use { "cpwrs/americano.nvim" }  
+	use { 'shaunsingh/nord.nvim' }
+	use {
+		"loctvl842/monokai-pro.nvim",
+		config = function()
+			require("monokai-pro").setup()
+		end
+	}
+
+	use { "Shatur/neovim-ayu", as = "ayu" }
+
+	use { 
+		"GustavEikaas/easy-dotnet.nvim",
+		dependencies = { "nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim', },
+		config = function()
+			require("easy-dotnet").setup()
+		end
+	}
+
+	use {'stevearc/dressing.nvim'}
 
   -- Async plugin (dependency for other plugins)
   use("nvim-lua/plenary.nvim")
@@ -72,14 +92,11 @@ return packer.startup(function(use)
   }
 
   -- Harpoon
-  use {'ThePrimeagen/harpoon'}
+  use {"ThePrimeagen/harpoon", branch = "harpoon2" }
 
   -- Git
 	use ("lewis6991/gitsigns.nvim")
   
-  -- GoLang tools
-  use("ray-x/go.nvim")
-
 	-- Visible identation
 	use {
 		"lukas-reineke/indent-blankline.nvim", 
@@ -119,15 +136,13 @@ return packer.startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+	use { "Hoffs/omnisharp-extended-lsp.nvim" }
 
 	-- LLM
-	use("nomnivore/ollama.nvim")
 	use("David-Kunz/gen.nvim")
 
-	-- Debugger
-	use("mfussenegger/nvim-dap")
-	use("leoluz/nvim-dap-go")
 
+	-- Tools
 	use("folke/trouble.nvim")
 	use("stevearc/conform.nvim")
 
