@@ -1,10 +1,10 @@
 local opt = vim.opt
 
 vim.filetype.add({
-    extension = {
-        templ = "templ",
-        log = "log"
-    },
+	extension = {
+		templ = "templ",
+		log = "log",
+	},
 })
 
 vim.g.mapleader = " "
@@ -44,5 +44,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 vim.diagnostic.config({
-    virtual_lines = true
+	open = true,
+	severity = { min = vim.diagnostic.severity.WARN },
 })

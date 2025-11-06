@@ -75,6 +75,7 @@ keymap.set("n", "<leader>cmr", ":MonokaiPro ristretto<CR>")
 keymap.set("n", "<leader>cms", ":MonokaiPro spectrum<CR>")
 
 -- Diganostics
+keymap.set("n", "<Leader>ds", vim.diagnostic.open_float, { desc = "Show diagnostic" })
 keymap.set("n", "<leader>dx", ":Trouble<CR>")
 keymap.set("n", "<leader>dxx", ":Trouble diagnostics toggle<CR>")
 keymap.set("n", "<leader>dxs", ":Trouble symbols toggle<CR>")

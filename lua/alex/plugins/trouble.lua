@@ -5,6 +5,10 @@ return {
 		open_no_results = true,
 		auto_close = true,
 		indent_guides = false,
+		preview = {
+			type = "main",
+			scratch = false,
+		},
 	},
 	keys = {
 		{
